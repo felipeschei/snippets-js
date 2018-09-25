@@ -75,12 +75,6 @@ function connectAll() {
     connectElements($("#svg1"), $("#path1"), $("#arrow-start"),   $("#arrow-end"));
 }
 
-let arrowStart = document.getElementByID('arrow-start');
-let arrowEnd = document.getElementByID('arrow-end');
-
-arrowStart.onclick = reloadConnect;
-arrowEnd.onclick = reloadConnect;
-
 function reloadConnect() {
     setTimeout(connectAll, 500);
 }
