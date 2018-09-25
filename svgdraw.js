@@ -75,6 +75,10 @@ function connectAll() {
     connectElements($("#svg1"), $("#path1"), $("#arrow-start"),   $("#arrow-end"));
 }
 
+function reloadConnect() {
+    setTimeout(connectAll, 500);
+}
+
 $(document).ready(function() {
     // reset svg each time 
     $("#svg1").attr("height", "0");
