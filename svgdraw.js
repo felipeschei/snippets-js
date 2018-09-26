@@ -69,7 +69,7 @@ function connectElements(svg, path, startElem, endElem) {
 }
 
 
-
+/*
 function connectAll() {
     // connect all the paths you want!
     connectElements($("#svg1"), $("#path1"), $("#arrow-start"),   $("#arrow-end"));
@@ -78,6 +78,7 @@ function connectAll() {
 function reloadConnect() {
     setTimeout(connectAll, 500);
 }
+*/
 
 $(document).ready(function() {
     // reset svg each time 
@@ -90,5 +91,5 @@ $(window).resize(function () {
     // reset svg each time 
     $("#svg1").attr("height", "0");
     $("#svg1").attr("width", "0");
-    connectAll();
+  //  connectAll();
 });
