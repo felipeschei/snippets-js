@@ -69,16 +69,18 @@ function connectElements(svg, path, startElem, endElem) {
 }
 
 
-/*
+
 function connectAll() {
     // connect all the paths you want!
-    connectElements($("#svg1"), $("#path1"), $("#arrow-start"),   $("#arrow-end"));
+    connectElements($("#svg1"), $("#path1"), $("#arrow-start"),   $("#arrow-p1"));
+    connectElements($("#svg1"), $("#path1"), $("#arrow-p1"),   $("#arrow-p2"));
+    connectElements($("#svg1"), $("#path1"), $("#arrow-p2"),   $("#arrow-end"));
 }
 
 function reloadConnect() {
     setTimeout(connectAll, 500);
 }
-*/
+
 
 $(document).ready(function() {
     // reset svg each time 
@@ -91,5 +93,5 @@ $(window).resize(function () {
     // reset svg each time 
     $("#svg1").attr("height", "0");
     $("#svg1").attr("width", "0");
-  //  connectAll();
+    connectAll();
 });
